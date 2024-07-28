@@ -26,12 +26,12 @@ export const HeroPage = () => {
                 <div className="card cont-card">
                     <img className="img-card" src={`/assets/heroes/${hero.id}.jpg`} alt={`Imagen de ${ hero.nombre }`} />
                     <div className="card-body">
-                        <h2 className="card-text">{ hero.nombre }</h2>
+                        <h2 className="card-text titulo-carta">{ hero.nombre }</h2>
                         <p className="card-text"><span>Tipo: </span>{ hero.tipo }</p>
                         <p className="card-text"><span>Origen: </span>{ hero.origen }</p>
                         <p className="card-text"><span>Descripción: </span>{ hero.descripcion }</p>
                         <div className="button-container">
-                        <button className="btn btn-primary" onClick={handleReturn}>Volver</button>
+                        <button className="btn btn-primary btn-carta" onClick={handleReturn}>Volver</button>
                     </div>     
                     </div>       
                 </div>

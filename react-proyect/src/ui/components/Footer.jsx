@@ -3,7 +3,9 @@
 export const Footer = () => {
   return (
     <div className="mt-5 p-5 bg-dark text-white text-center">
-      Footer
+      <p>Diego Ávila</p>
+      <p>Evaluación 3 y 4 de Front-End con React y Javascript</p>
+      <p>28-07-2024</p>
     </div>
   )
 }
