@@ -3,7 +3,10 @@ import { HeroeList } from "../components/HeroeList"
 export const AnimePage = () => {
   return (
     <>
-      <HeroeList tipo="anime"/>
+      <div className="titulo">
+        <h2>Animes</h2>
+      </div>
+      <HeroeList tipo="anime" />
     </>
   )
 }

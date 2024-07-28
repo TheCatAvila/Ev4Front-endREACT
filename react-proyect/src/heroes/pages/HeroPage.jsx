@@ -22,19 +22,21 @@ export const HeroPage = () => {
         <>
         {
             hero ? (
-            <div className="card">
-                <img src={`/assets/heroes/${hero.id}.jpg`} alt={`Imagen de ${ hero.nombre }`} />
-                <img src={`/assets/heroes/${hero.id}.jpeg`} alt={`Imagen de ${ hero.nombre }`} />
-                <div className="card-body">
-                    <h2 className="card-text">{ hero.nombre }</h2>
-                    <p className="card-text">{ hero.tipo }</p>
-                    <p className="card-text">{ hero.origen }</p>
-                    <p className="card-text">{ hero.descripcion }</p>
+            <div className="contenedor-total-info">
+                <div className="card cont-card">
+                    <img className="img-card" src={`/assets/heroes/${hero.id}.jpg`} alt={`Imagen de ${ hero.nombre }`} />
+                    <div className="card-body">
+                        <h2 className="card-text">{ hero.nombre }</h2>
+                        <p className="card-text"><span>Tipo: </span>{ hero.tipo }</p>
+                        <p className="card-text"><span>Origen: </span>{ hero.origen }</p>
+                        <p className="card-text"><span>Descripción: </span>{ hero.descripcion }</p>
+                        <div className="button-container">
+                        <button className="btn btn-primary" onClick={handleReturn}>Volver</button>
+                    </div>     
+                    </div>       
                 </div>
-                <div className="button-container">
-                    <button className="btn btn-primary" onClick={handleReturn}>Volver</button>
-                </div>            
             </div>
+            
             ) : (
                 <h1>El heroe no existe!</h1>
             )

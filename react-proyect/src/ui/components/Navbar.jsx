@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-sm bg-dark navbar-dark mb-5">
+    <nav className="navbar navbar-expand-sm bg-dark navbar-dark mb-0">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">Logo</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">

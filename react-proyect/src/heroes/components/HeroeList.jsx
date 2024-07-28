@@ -7,19 +7,8 @@ export const HeroeList = ({tipo}) => {
 
   return (
     <>
-        <h1>Heroe List</h1>
-        {/* <ul>
-            {
-                heroes.map(aux => (
-                    <li key={aux.id}>
-                        {aux.nombre}
-                    </li>
-                ))
-            }
-        </ul> */}
-
         <div className="container">
-            <div className="col-md-8 offset-md-2">
+            <div className="col-md-8">
             {
                 heroes.map(aux => (
                     <HeroeCard key={aux.id} {...aux}/>
