@@ -1,7 +1,9 @@
-
+import { HeroeList } from "../components/HeroeList"
 
 export const AnimePage = () => {
   return (
-    <div>AnimePages</div>
+    <>
+      <HeroeList tipo="anime"/>
+    </>
   )
 }

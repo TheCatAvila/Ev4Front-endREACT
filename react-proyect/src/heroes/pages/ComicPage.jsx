@@ -1,6 +1,9 @@
+import { HeroeList } from "../components/HeroeList"
 
 export const ComicPage = () => {
   return (
-    <div>ComicPage</div>
+    <>
+      <HeroeList tipo="comics"/>
+    </>
   )
 }
