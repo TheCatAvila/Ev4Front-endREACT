@@ -9,7 +9,7 @@ export const HeroeCard = ({id, nombre, tipo, origen, descripcion}) => {
             <div className="card-body">
               <h4 className="card-title">{nombre}</h4>
               <div className="card-text">{origen}</div>
-              <button className="btn btn-primary"><Link className="color-btn-link" to={`/hero/${id}`}> Ver más... </Link></button>
+              <Link className="color-btn-link" to={`/hero/${id}`}><button className="btn btn-primary"> Ver más... </button></Link>
         </div>
       </div>
   )

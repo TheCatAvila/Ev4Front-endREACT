@@ -6,6 +6,7 @@ export const Footer = () => {
       <p>Diego Ávila</p>
       <p>Evaluación 3 y 4 de Front-End con React y Javascript</p>
       <p>28-07-2024</p>
+      <p>T12031/133-A</p>
     </div>
   )
 }
