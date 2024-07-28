@@ -4,6 +4,7 @@ import { Navbar } from "../../ui/components/Navbar"
 import { HomePage } from "../pages/HomePage"
 import { AnimePage } from "../pages/AnimePage"
 import { ComicPage } from "../pages/ComicPage"
+import { HeroPage } from "../pages/HeroPage"
 
 export const HeroesRoutes = () => {
   return (
@@ -14,6 +15,7 @@ export const HeroesRoutes = () => {
           <Route path="home" element={<HomePage/>}></Route>
           <Route path="animes" element={<AnimePage/>}></Route>
           <Route path="comics" element={<ComicPage/>}></Route>
+          <Route path="hero/:id" element={<HeroPage/>}></Route>
       </Routes>
       <Footer/>
     </>

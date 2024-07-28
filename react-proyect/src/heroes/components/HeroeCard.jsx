@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export const HeroeCard = ({id, nombre, tipo, origen, descripcion}) => {
   const imgSrc = `/assets/heroes/${id}.jpg`;
@@ -14,6 +15,7 @@ export const HeroeCard = ({id, nombre, tipo, origen, descripcion}) => {
           <div className="card-body">
             <div className="card-title">{nombre}</div>
             <div className="card-text">{origen}</div>
+            <Link to={`/hero/${id}`}> Ver más... </Link>
           </div>
         </div>
       </div>
